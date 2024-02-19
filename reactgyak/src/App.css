@@ -1,0 +1,45 @@
+* {
+    padding:0;
+    margin:0; 
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+}
+
+input, select, button {
+    padding: 8px;
+}
+
+.center-input {
+    /*
+    mivel az input mezőknek nincsen display tulajdonságuk, ezért nem lehet margin: auto;-ra rakni, 
+    mert arra általában csak a display: block-ot lehet
+    ezt a class-t majd meg fogja kapni az input mező és a button jsx elem is
+    */
+    display: block;
+    margin: 10px auto;
+}
+
+.container {
+    max-width: 1080px;
+    margin: auto;
+    padding: 15px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/*
+ezt az osztályt az ul-nek adtuk meg, azért kell majd utánaírni, hogy li 
+*/
+.todo-list li {
+    list-style: none;/*ezzel eltüntetjük a pontokat a lista elejéről*/
+    margin: 10px auto;
+    height: 50px; 
+    line-height: 50px;
+    max-width: 300px;
+    color: white;
+}
